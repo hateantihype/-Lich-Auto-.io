@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LICH AUTO - Объединенный сайт</title>
+  
+  <link rel="stylesheet" href="style/стили.css">
+</head>
+<body>
+
+  <header>
+    <div>📞 +7(880)-555-35-35</div>
+    <div>📍 г.Ростов-на-Дону, ул.Сваги,88</div>
+    <div>🕒 Пн-Сб: 10:00–19:00, Вс: 11:00–18:00</div>
+  </header>
+
+  <div class="nav-banner">
+    <div class="logo">LICH AUTO</div>
+    <div class="nav-menu">
+      <a href="#main-page">Главная страница</a>
+      <a href="#cars-catalog">Автомобили</a>
+      <a href="#">Расчёт стоимости</a>
+      <a href="#personal-account">Вход</a>
+      <a href ="#registration-form" class="btn">Записаться на тест-драйв</a>
+    </div>
+  </div>
+
+
+  <section id="main-page">
+    <div class="hero">
+      <div class="hero-text">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h1>ПРЕМИУМ АВТОМОБИЛИ <br> В РОСТОВЕ-НА-ДОНУ</h1>
+        <p>∘ Можно выкупить</p>
+        <p>∘ Большой парк в наличии</p>
+        <p>∘ Легковые и коммерческие авто</p>
+      </div>
+    </div>
+    
+    <div class="car-search">
+      <h3>Подобрать машину</h3>
+      <form>
+        <input type="text" placeholder="Введите название (например, Kia, VW, Hyundai)">
+        <input type="text" placeholder="Введите характеристики (например, кроссовер, автомат)">
+        <button type="submit">Подобрать</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="cars-catalog">
+    <h2>Наши автомобили</h2>
+
+    <div class="cars">
+      <div class="card" data-code="HY-CR-2021, Hyundai Creta, 1 350 000₽, прокат от 2000₽, автомат">
+        <img src="https://avatars.mds.yandex.net/get-autoru-vos/2057430/05426862fe4193c7cfc76bf0ff943c92/1200x900" alt="Hyundai Creta">
+        <div class="card-content">
+          <h3>Hyundai Creta</h3>
+          <p>Надёжный партнер с большим будущим</p>
+        </div>
+      </div>
+      <div class="card" data-code="VW-TG-2020, VW Tiguan, 2 000 000₽, прокат от 3000₽, автомат">
+        <img src="https://a.d-cd.net/hyiOsBmyPPV3bo8LkVhBRYuEkxM-1920.jpg" alt="VW Tiguan">
+        <div class="card-content">
+          <h3>VW Tiguan</h3>
+          <p>Лидер европейского рынка среди семейных автомобилей</p>
+        </div>
+      </div>
+      <div class="card" data-code="DG-CH-2019, Dodge Challenger, 3 500 000₽, прокат от 5000₽, автомат">
+        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1vD8mk.img?w=1920&h=1080&m=4&q=79" alt="Dodge Challenger">
+        <div class="card-content">
+          <h3>Dodge Challenger</h3>
+          <p>Футуристичный дизайн и бесконечная брутальность</p>
+        </div>
+      </div>
+      <div class="card" data-code="VW-PL-2022, VW Polo NEW, 1 250 000₽, прокат от 1800₽, автомат">
+        <img src="https://www.carscoops.com/wp-content/uploads/2020/02/2020-VW-Polo-Sedan-Russia-spec-0.jpg" alt="VW Polo NEW">
+        <div class="card-content">
+          <h3>VW Polo NEW</h3>
+          <p>Новейший и дорожайший Volkswagen Polo</p>
+        </div>
+      </div>
+      <div class="card" data-code="KI-SP-2022, Kia Sportage, 1 650 000₽, прокат от 2500₽, автомат">
+        <img src="https://i.ytimg.com/vi/Ft00T2w2lTk/maxresdefault.jpg" alt="Kia Sportage NEW">
+        <div class="card-content">
+          <h3>Kia Sportage NEW</h3>
+          <p>Новейший партнер: Sportage</p>
+        </div>
+      </div>
+      <div class="card" data-code="HV-JL-2023, Haval Jolion, 2 100 000₽, прокат от 4000₽, автомат">
+        <img src="https://avatars.mds.yandex.net/get-taxi-fleet-posting/12730696/ac558cab-ddf0-4f8f-aeba-c17bf810903a/marketplace-1160x724" alt="Haval Jolion">
+        <div class="card-content">
+          <h3>Haval Jolion</h3>
+          <p>Удобный для большой семьи Haval Jolion</p>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">Посмотреть все</a>
+  </section>
+
+  <section id="registration-form">
+    <div class="registration">
+        <h2>Форма регистрации</h2>
+      <form action="register.php" method="post">
+        <label>ФИО полностью:</label><br>
+        <input type="text" name="fullname" required><br>
+
+        <label>Телефон:</label>
+        <input type="tel" name="phone" required><br>
+
+        <label>Адрес:</label>
+        <input type="text" name="address" required><br>
+
+        <label>Серия и номер паспорта:</label>
+        <input type="text" name="passport_series" required><br>
+
+        <label>Выдан:</label>
+        <input type="text" name="passport_issued" required><br>
+
+        <button type="submit">Зарегистрироваться</button>
+      </form>       
+    </div>
+
+    <div class="footer-banner">
+      <p>© 2025 LICH AUTO -- Все права защищены</p>
+      <p>📍 г.Ростов-на-Дону | 📞 +7 (800) 555-35-35</p>
+    </div>
+  </section>
+
+
+  <section id="personal-account">
+    <div class="info">
+      <div class="debil">Личный кабинет</div>
+    </div>
+
+    <div class="profile-container">
+        <div class="left-column">
+            <div class="user-card">
+                <img src="https://media.istockphoto.com/id/485190262/tr/foto%C4%9Fraf/unknown-male-person-silhouette.jpg?s=1024x1024&w=is&k=20&c=gdF221js7CSFAjSkaT100N6kTi1CWAUlBo0fNqSiW34=" alt="Фотография пользователя">
+                <div class="caption">Фотография пользователя</div>
+            </div>
+
+            <div class="user-info">
+              <p>ФИО</p>
+              <p>Номер телефона</p>
+              <p>Паспортные данные</p>
+              <p>Код клиента</p>
+              <p>Адрес проживания</p>
+            </div>
+        </div>
+
+        <div class="history">
+          <h3>Информация о раннее выданных автомобилях</h3>
+          <b>Код автомобиля</b>
+          <b>Код клиента</b>
+          <b>Дата выдачи</b>
+          <b>Дата возврата</b>
+        </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
